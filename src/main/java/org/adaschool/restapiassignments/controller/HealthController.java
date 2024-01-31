@@ -12,7 +12,7 @@ public record HealthController() {
 
   @GetMapping
   public ResponseEntity<?> getHealthResponse(){
-    // TODO Implement your call on the rest endpoint method
+    return new ResponseEntity<String>("API working OK!", HttpStatus.OK);
   }
 
 }
